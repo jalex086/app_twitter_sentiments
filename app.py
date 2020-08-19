@@ -36,6 +36,7 @@ def graficar(nombres, datos, tweeter_user):
 	ax.bar(xx, datos, width=0.8, align='center')
 	ax.set_xticks(xx)
 	ax.set_xticklabels(nombres)
+	plt.ylabel('cantidad de tweets')
 	plt.savefig('static/images/{}.png'.format(tweeter_user))
 	plt.close()
 	plt.clf()
